@@ -19,6 +19,8 @@
       },
       {
         "name": "style",
+
+        
         "mutable": false,
         "input_type": "select",
         "default_value": "solid",
