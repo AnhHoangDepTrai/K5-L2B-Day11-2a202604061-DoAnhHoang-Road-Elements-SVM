@@ -5,24 +5,24 @@ Người kiểm (học viên): DoAnhHoang
 Ngày: 2026-11-21
 Phiên bản guideline: Road v1.0
 File được kiểm (tên + `revision` trong manifest): phamtrungthanh-front.zip và phamtrungthanh-fisheye.zip, revision 1
-Số ảnh kiểm: 28 (+ 8 ảnh thêm trong hai ZIP, ghi riêng)
-Số nhãn đã kiểm (shape + tag): 347 (235 shape + 112 tag), theo lint toàn lô
+Số ảnh kiểm: Chưa hoàn tất kiểm tay (lint quét được 28 ảnh bắt buộc + thêm)
+Số nhãn đã kiểm (shape + tag): Chưa hoàn tất kiểm tay; chỉ có kết quả lint tự động
 
 ## Tổng hợp theo mã
 | Mã | Loại lỗi | Số mục kiểm | Số lỗi | Mức |
 | --- | --- | ---: | ---: | --- |
-| QC1-01 tag camera | sai thuộc tính / bỏ sót | 28 | 0 | nặng |
-| QC1-02 đủ L1, R1 | bỏ sót | 40 | 5 | nặng |
-| QC1-03 position | sai thuộc tính / thừa | 48 | 0 | nặng |
-| QC1-04 tâm vạch, chiều, điểm dừng | sai phạm vi / bỏ sót | 48 | 0 | chính |
-| QC1-05 vạch đứt, che | sai phạm vi / sai thuộc tính | 48 | 0 | chính |
-| QC1-06 style, color, kind | sai thuộc tính | 48 | 0 | chính |
-| QC1-07 vùng lái | sai phạm vi / bỏ sót / thừa | 85 | 0 | chính |
-| QC1-08 đèn, màu | bỏ sót / sai phạm vi / sai thuộc tính | 102 | 0 | nặng / chính |
-| QC1-09 facing, type, group, biển phụ | sai thuộc tính | 102 | 0 | chính |
-| QC1-10 hình in, đủ biển | bỏ sót / sai phạm vi | 102 | 0 | chính |
-| QC1-11 fisheye | sai phạm vi / sai thuộc tính | 12 | 0 | chính |
-| QC1-12 file | lỗi file | 2 | 0 | nhẹ / nặng |
+| QC1-01 tag camera | sai thuộc tính / bỏ sót | Chưa kiểm tay | Chưa xác nhận | nặng |
+| QC1-02 đủ L1, R1 | bỏ sót | Chưa kiểm tay | 5 cảnh báo lint | nặng |
+| QC1-03 position | sai thuộc tính / thừa | Chưa kiểm tay | Chưa xác nhận | nặng |
+| QC1-04 tâm vạch, chiều, điểm dừng | sai phạm vi / bỏ sót | Chưa kiểm tay | Chưa xác nhận | chính |
+| QC1-05 vạch đứt, che | sai phạm vi / sai thuộc tính | Chưa kiểm tay | Chưa xác nhận | chính |
+| QC1-06 style, color, kind | sai thuộc tính | Chưa kiểm tay | Chưa xác nhận | chính |
+| QC1-07 vùng lái | sai phạm vi / bỏ sót / thừa | Chưa kiểm tay | Chưa xác nhận | chính |
+| QC1-08 đèn, màu | bỏ sót / sai phạm vi / sai thuộc tính | Chưa kiểm tay | Chưa xác nhận | nặng / chính |
+| QC1-09 facing, type, group, biển phụ | sai thuộc tính | Chưa kiểm tay | Chưa xác nhận | chính |
+| QC1-10 hình in, đủ biển | bỏ sót / sai phạm vi | Chưa kiểm tay | Chưa xác nhận | chính |
+| QC1-11 fisheye | sai phạm vi / sai thuộc tính | Chưa kiểm tay | Chưa xác nhận | chính |
+| QC1-12 file | lỗi file | 2 file | 0 | nhẹ / nặng |
 
 ## Danh sách lỗi
 | # | Mã | Ảnh | Nhãn (label, id) | Mức | Mô tả ngắn |
@@ -42,9 +42,9 @@ Số nhãn đã kiểm (shape + tag): 347 (235 shape + 112 tag), theo lint toàn
 | A09_c7e6d5d1-c8af9fe3.jpg | Cần xác nhận R1 có thực sự thấy được không | Chưa có lời đáp |
 
 ## Quyết định
-Lỗi nặng: 5
-Lỗi chính: 0 / 347 nhãn = 0 %
+Lỗi nặng: Chưa kết luận; 5 cảnh báo QC1-02 đang chờ kiểm tay
+Lỗi chính: Chưa kết luận
 Lỗi nhẹ: 0
 Ca chờ lead: 4 ảnh
-Quyết định (Release / Hold / Rework): Rework
-Lý do (theo luật của phiếu): Có 5 cảnh báo nặng QC1-02 (thiếu L1/R1) theo lint; theo quy tắc phiếu, có lỗi nặng thì Rework, trừ khi coach xác nhận trên ảnh thực sự không có vạch.
+Quyết định (Release / Hold / Rework): Hold
+Lý do (theo luật của phiếu): Có 5 cảnh báo QC1-02 về L1/R1 chưa được xác nhận bằng kiểm tay; chưa đủ cơ sở để quyết định Release hoặc Rework.

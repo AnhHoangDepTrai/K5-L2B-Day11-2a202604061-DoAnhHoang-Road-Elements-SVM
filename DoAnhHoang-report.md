@@ -1,10 +1,10 @@
 # Báo cáo cá nhân — Ngày 11
 Họ tên: Do Anh Hoang
-Mã học viên: Chưa cung cấp
-Phiên bản CVAT (Help → About): Chưa ghi
+Mã học viên: 2a202604061
+Phiên bản CVAT (Help → About): 2.74.1
 Guideline: Road v1.0
 Lần nộp (`revision` trong manifest): 1
-Thời điểm export (ngày giờ trên CVAT): Chưa ghi
+Thời điểm export (ngày giờ trên CVAT): 11:00
 Số lần nộp lại sau Rework: 0
 
 ## 1. Kiểm project
@@ -13,7 +13,7 @@ Số lần nộp lại sau Rework: 0
 | 6 label, đúng kiểu | Có | lane/road_curb: polyline; crosswalk/drivable: polygon; traffic_light/traffic_sign: rectangle |
 | Thuộc tính và giá trị | Cần xác nhận lại trong CVAT | XML lint báo còn một số ca mơ hồ L1/R1 và vạch fisheye |
 | 4 tag ảnh | Có | camera, timeofday, weather, source |
-Cách kết thúc polyline trên bản CVAT này: Chưa ghi
+Cách kết thúc polyline trên bản CVAT này: Polyline được tạo bằng nhiều điểm trên cung; không ghi lại thao tác kết thúc trong export
 Cách đặt tag ảnh trên bản CVAT này: Tag label với một thuộc tính `value`
 
 ## 2. Số lượng đã gán
@@ -41,14 +41,14 @@ Quyết định nhận được: Chưa ghi / chưa được cung cấp đủ d�
 ## 5. Kiểm file export
 | File | Mở lại được? | Số shape ảnh 1 (job / file) | Số shape ảnh 2 (job / file) | Tag camera có trong XML? |
 | --- | --- | --- | --- | --- |
-| DoAnhHoang-front.zip | Có | Theo XML / file đã mởi lại | Theo XML / file đã mởi lại | Có |
-| DoAnhHoang-fisheye.zip | Có | Theo XML / file đã mởi lại | Theo XML / file đã mởi lại | Có |
+| DoAnhHoang-front.zip | Có | A01: 4 drivable, 4 lane / 8 shape; A02: 4 drivable, 3 lane, 2 road_curb / 9 shape | Mỗi ZIP đã mở lại bằng lint; xem XML ở 2 ảnh đầu | Có |
+| DoAnhHoang-fisheye.zip | Có | B01: 1 drivable, 1 crosswalk, 3 road_curb / 5 shape; B02: 1 drivable, 1 crosswalk, 2 road_curb / 4 shape | Mỗi ZIP đã mở lại bằng lint; xem XML ở 2 ảnh đầu | Có |
 
 ## 6. Ảnh chụp màn hình
-1. Tab Labels của project: Chưa chèn ảnh.
-2. Một ảnh camera trước đã gán đủ (làn, vùng lái, đèn/biển): Chưa chèn ảnh.
-3. Một ảnh fisheye đã gán: Chưa chèn ảnh.
-4. Một đoạn XML có `<polyline label="lane">`: Chưa chèn ảnh.
+1. Tab Labels của project: ![lables của project](image-2.png)
+2. Một ảnh camera trước đã gán đủ (làn, vùng lái, đèn/biển): ![ảnh cam trước đã gắn đủ](image.png)
+3. Một ảnh fisheye đã gán: ![cam fishyey](image-1.png)
+4. Một đoạn XML có `<polyline label="lane">`: Chưa có ảnh chụp màn hình thực tế.
 
 ## 7. Tự đánh giá
 Lỗi bạn mắc nhiều nhất hôm nay (theo mã QC1-xx), và cách tránh ở Ngày 20:
